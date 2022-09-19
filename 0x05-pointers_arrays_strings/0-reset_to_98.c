@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- *Author - Mzwandile Sithebe
- *
- *reset_to_98 - takes a pointer to an int as parameter and updates the value it points to to 98.
- *Return: Always 0
- */
+*Author : Mzwandile Sithebe
+*reset_to_98 - resets the value of given integer to 98
+*@n: parameter
+*Return : nothing
+*/
 
 void reset_to_98(int *n)
 {
