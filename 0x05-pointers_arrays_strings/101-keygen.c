@@ -1,27 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "main.h"
 
 /**
- * main - entry point
+ * main - Entry point
  *
- * Return: generated password
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
+	int sum;
 	char c;
-	int x;
 
-	srand(time(0));
-	while (x <= 2645)
+	srand(time(NULL));
+	while (sum <= 2645)
 	{
 		c = rand() % 128;
-		x += c;
+		sum += c;
 		putchar(c);
 	}
-	putchar(2772 - x);
+	putchar(2772 - sum);
 
 	return (0);
 }
