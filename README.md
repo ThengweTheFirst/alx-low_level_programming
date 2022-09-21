@@ -1,3 +1,3 @@
 Author : Mzwandile Sithebe
 
-Coding in C
+C coding 
