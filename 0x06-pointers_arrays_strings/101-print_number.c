@@ -1,8 +1,9 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
  * print_number - function to print int using _putchar
- *Auth: Mzwandile Sithebe
+ *
  * @num: int to print
  */
 void print_number(int num)
@@ -20,7 +21,7 @@ void print_number(int num)
 		_putchar('0' + n);
 	}
 	else
- 	{
+	{
 		while (n >= d)
 		{
 			d *= 10;
