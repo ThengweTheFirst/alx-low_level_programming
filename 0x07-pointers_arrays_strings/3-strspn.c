@@ -1,28 +1,29 @@
-#include <stdio.h>
-#include "main.h"
-
 /**
- * _strspn - gets the length odf a prefix substring
- * @s: contains bytes from @accept
- * @accept: the prefix to be measured
+ * _strspn - Returns the number of bytes in the initial segment
+ * of s which consist only of bytes from accept
  *
- * Return: the number of bytes in the initial segment of @s which consist only of bytes from @accept
+ * @s: string to search
+ * @accept: characters to look for
+ *
+ * Return: number of bytes that matched at start of string
  */
-
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j;
+	unsigned int sum = 0;
+	char *ptr = accept;
 
-	for (i = 0; s[i]; i++)
+	while (*s != 0)
 	{
-		for (j = 0; accept[j]; j++)
+		if (*s == *ptr && *ptr != 0)
 		{
-			if (s[i] == accept[j])
-				break;
+			sum++;
+			s++;
+			ptr = accept;
 		}
-		if (!accept[j])
-			break;
+		else
+			ptr++;
+		if (*ptr == 0)
+			return (sum);
 	}
-	return (i);
+	return (sum);
 }
-
