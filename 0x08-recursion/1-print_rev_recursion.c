@@ -7,7 +7,6 @@
  *
  * Return: nothing
  */
-
 void _print_rev_recursion(char *s)
 {
 	if (*s)
@@ -16,4 +15,3 @@ void _print_rev_recursion(char *s)
 		_putchar(*s);
 	}
 }
-
