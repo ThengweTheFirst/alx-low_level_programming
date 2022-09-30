@@ -1,39 +1,23 @@
-Task 0.   It ain't what they call you, it's what you answer to
+Author : Mzwandile A Sithebe
+
+Task 0
 Aim:      Write a program that prints its name, followed by a new line.
 Fact:     If you rename the program, it will print the new name, without having to compile it again
           You should not remove the path before the name of the program
 Filename: 0-whatsmyname.c
 
-
-
-
-
-
-Task 1.   Silence is argument carried out by other means
+Task 1
 Aim:      Write a program that prints the number of arguments passed into it.
 Output:   Your program should print a number, followed by a new line
 Filename: 1-args.c
 
-
-
-
-
-
-
-
-Task 2.   The best argument against democracy is a five-minute conversation with the average voter
+Task 2
 Aim:      Write a program that prints all arguments it receives.
 FYI:      All arguments should be printed, including the first one
 Output:   Only print one argument per line, ending with a new line
 Filename: 2-args.c
 
-
-
-
-
-
-
-Task 3.      Neither irony nor sarcasm is argument
+Task 3
 Aim:         Write a program that multiplies two numbers.
 Description: Your program should print the result of the multiplication, followed by a new line
              You can assume that the two numbers and result of the multiplication can be stored in an integer
@@ -41,14 +25,7 @@ Description: Your program should print the result of the multiplication, followe
              and return 
 Filename:    3-mul.c
 
-
-
-
-
-
-
-
-Task 4. To infinity and beyond
+Task 4
 Aim: Write a program that adds positive numbers.
 Description: Print the result, followed by a new line
 If no number is passed to the program, print 0, followed by a new line
