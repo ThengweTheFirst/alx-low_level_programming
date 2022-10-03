@@ -1,51 +1,45 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 
 /**
- * str_concat - concatenates two strings
- * @s1: pointer to string
- * @s2: pointer to string
- *
- * Return: pointer to newly allocated memory which has s1, s2 and NULL byte. NULL on faliure
+ * str_concat -> function that concat two strings
+ * @s1: first input
+ * @s2: second input
+ * Return: concat of s1 and s2
  */
 
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int a, b, size, x, y;
-	char *nstr;
+	char *concat;
+	int i, ci;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 
-	a = 0;
-	while (s1[a] != '\0')
-		a++;
-	b = 0;
-	while (s2[b] != '\0')
-		b++;
+	i = ci = 0;
+	while (s1[i] != '\0')
+		i++;
+	while (s2[ci] != '\0')
+		ci++;
+	concat = malloc(sizeof(char) * (i + ci + 1));
 
-	size = a + b;
-
-	nstr = malloc((sizeof(char) * size) + 1);
-	if (nstr == NULL)
-		return(NULL);
-
-	x = 0;
-	while (x < a)
+	if (concat == NULL)
+		return (NULL);
+	i = ci = 0;
+	while (s1[i] != '\0')
 	{
-		nstr[x] = s1[x];
-		x++;
+		concat[i] = s1[i];
+		i++;
 	}
-	y = 0;
-	while (y <= size)
+
+	while (s2[ci] != '\0')
 	{
-		nstr[a] = s2[y];
-		x++;
-		y++;
+		concat[i] = s2[ci];
+		i++, ci++;
 	}
-	return(nstr);
+	concat[i] = '\0';
+	return (concat);
 }
-
